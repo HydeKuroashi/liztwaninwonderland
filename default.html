@@ -1,0 +1,104 @@
+﻿
+<!DOCTYPE html>
+<html manifest="manifest.txt">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="Scripts/inicioGame.js"></script>
+    <script src="Scripts/videoGameScript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link type="text/css" href="Estilos/mainStyle.css" rel="stylesheet" />
+    <link type="text/css" href="Estilos/inicioStyle.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+    <embed src="musica/Alice.mp3" hidden="true" loop="true">
+
+    <!-- <audio controls="controls" loop autoplay hidden > -->
+        <!-- <source src="Musica/Alice.mp3"  type="audio/mpeg" /> -->
+    <!-- </audio> -->
+    <div id="gameInicio">
+
+        <div id="main" class="frame">
+            <h1>
+                MabysLand
+            </h1>
+            <br>
+            
+            
+            <br>
+            <button onclick="location.href='Liz_in_wonderland.html'">
+                Jugar
+            </button>
+            <button onclick="gameInicio.setFrameVisible('highscores'); gameInicio.setFrameHidden('main'); scores()">
+                Puntuaciones
+            </button>
+            <button onclick="gameInicio.setFrameVisible('about'); gameInicio.setFrameHidden('main');">
+                Historia
+            </button>
+        </div>
+
+        <div id="highscores" class="frame hidden">
+            <h3>score</h3>
+            <ul id="puntuaciones"> </ul>
+            <br />
+            <br />
+            <br />
+            <button onclick="gameInicio.setFrameVisible('main'); gameInicio.setFrameHidden('highscores');">
+                Volver al Menú
+            </button>
+        </div>
+        <div id="about" class="frame hidden">
+            <div>
+                <br />
+                <div style="text-align: justify;">
+                    Era una noche lluviosa y solitaria en la que mi única compañía era mi oso de peluche. Era un oso muy especial para mí, por eso me sentía muy triste al verlo mojado y manchado de sangre; estaba tan pesado, tan frío… Irremediable. La cólera era dueña de mi mente, y mi voz interna sólo me decía las peores cosas que se le ocurrían.&nbsp;
+                </div>
+                <div style="text-align: justify;">
+                    <br>
+                </div>
+                <div style="text-align: justify;">
+                    Mis pies no dolían, no estaban cansados, no sentían mi temor, no se detenían por más indecisa que estuviera. Llegué al puente, el puente que había soñado días antes, el puente que con certeza sabía que existía a pesar de no haberlo visto nunca. ¿Cómo la mente podía saber algo como esto? Parecía magia.&nbsp;
+                </div>
+                <div style="text-align: justify;">
+                    <br>
+                </div>
+                <div style="text-align: justify;">
+                    Miré fijamente a la nada, miré con seriedad y determinación. Al agachar la mirada, sentí miedo, y era porque sabía que algo malo me ocurriría, y sabía que ocurriría porque no tenía argumentos con qué defenderme, no había forma de convencerme de que esto estaba mal.&nbsp;
+                </div>
+                <div style="text-align: justify;">
+                    <br>
+                </div>
+                <div style="text-align: justify;">
+                    El frío pasaba desapercibido, pronto la lluvia se convirtió en tormenta; el puente parecía una laguna, mis zapatos estaban empapados, pero aun así mis pies no sentían nada. No sentía nada de nada.&nbsp;
+                </div>
+                <div style="text-align: justify;">
+                    <br>
+                </div>
+                <div style="text-align: justify;">
+                    El tiempo era desconocido para mí, parecía una eternidad. A pesar de que era de noche, el sueño no tenía ni la más mínima intención de invitarme a su mundo. El silencio me hizo pensar, y el pensar me hizo reflexionar.&nbsp;
+                </div>
+                <div style="text-align: justify;">
+                    <br>
+                </div>
+                <div style="text-align: justify;">
+                    Alguien había llegado, lo sabía porque sus pasos eran cada vez más ruidosos, pero por alguna razón no me importaba, sentía el mismo miedo pero no estaba alterada. Y entonces llegó él, aquel hombre con capa, una capa térmica oscura. Se acercó a mí y me cubrió completamente con su abrigadora capa, me sentí aliviada.&nbsp;
+                </div>
+                <div style="text-align: justify;">
+                    <br>
+                </div>
+                <div style="text-align: justify;">
+                    Era la primera vez que veía a la muerte; a diferencia de lo que decían sobre ella, yo la vi como alguien cálido y sereno. Había llegado tarde por mí, pero más vale tarde que nunca, ¿no?
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+
+            <button onclick="gameInicio.setFrameVisible('main'); gameInicio.setFrameHidden('about');">
+                Volver al Menú
+            </button>
+        </div>
+    </div>
+</body>
+</html>

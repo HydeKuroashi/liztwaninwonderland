@@ -1,0 +1,158 @@
+﻿
+
+#canvas button {
+    -webkit-transition: border-radius 1s, text-shadow 1s, color 1s;
+    font-family: 'upcll';
+    font-size: 30px;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    background: none;
+    text-shadow: 0px 0px 8px red;
+    border: 1px solid red;
+    border-radius: 3px;
+    text-decoration: none;
+    border-color: blueviolet blueviolet blueviolet;
+    
+}
+
+    #canvas button:hover {
+        border-radius: 20px;
+        text-shadow: 0px 0px 50px white;
+        color: white;
+    }
+
+    #canvas button:active {
+        text-shadow: 0px 0px 20px #65078b;
+    }
+
+
+#about {
+    font-family: "ComingSoon";
+    
+    font-size: 20px;
+    width: 650px;
+    height: 1300px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top:40px;
+	
+	color: black;
+	    background-image: url('../Imagenes/fondo.png');
+}
+
+#highscores {
+     font-family:'upcll';
+    
+	color: black;
+    
+    font-size: 50px;
+    width: 650px;
+    height: 900px;
+    padding-left: 40px;
+    padding-right: 40px;
+	background-image: url('../Imagenes/fondo.png');
+}
+
+
+ul#puntuaciones {
+    font-family:'ComingSoon';
+    /*width: 300px;*/
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+}
+
+    ul#puntuaciones li {
+        font-family: 'ComingSoon';
+        line-height: 1.5em;
+        border-bottom: 1px solid #aaa;
+        float: left;
+        display: inline;
+        width: 50%;
+        padding: 10px 0;
+        font-size: 20px;
+    }
+
+
+.hidden {
+    visibility: hidden;
+    /*-webkit-transition: opacity 1s;*/
+    z-index: 0;
+    opacity: 0;
+}
+
+
+.visible {
+    visibility: visible;
+    /*-webkit-transition: opacity 1s;*/
+    z-index: 1;
+    opacity: 1;
+}
+
+.frame {
+    position: absolute;
+    width: 600px;
+    height: 500px;
+	color: #9660ff;
+
+    background-image: url('../Imagenes/DreamDrop.png');
+    font-family:'upcll';
+     src: url('../Fuentes/upcll.ttf') format('truetype');
+
+    text-shadow: 0px 0px 20px Red;
+    font-size: 30px;
+    -webkit-user-select: none;
+}
+
+
+
+    .frame button {
+        -webkit-transition: border-radius 1s, text-shadow 1s, color 1s;
+        font-family:'ComingSoon';
+        font-size: 20px;
+        color: #9660ff;
+        margin: 10px;
+        padding: 10px;
+        width: 300px;
+        background: none;
+        text-shadow: 0px 0px 20px red;
+        border: none; /*1px solid white;*/
+        border-radius: 3px;
+        text-decoration: none;
+        border-color: none; /*blueviolet blueviolet blueviolet;*/
+        /*box-shadow: 0px  3px 5px blueviolet;*/
+    }
+@font-face {
+    font-family: 'ComingSoon';
+    src: url('../Fuentes/ComingSoon.ttf') format('truetype');
+}
+
+        .frame button:hover {
+            border-radius: 20px;
+            text-shadow: 0px 0px 50px #65078b;
+            color:white;
+            }
+
+        .frame button:active {
+            text-shadow: 0px 0px 20px #65078b;
+        }
+
+
+body {
+    margin: 0 auto;
+    width: 600px;
+    height: 700px;
+    margin-top: 50px;
+    text-align: center;
+    background-color: black;
+    /*background-image: linear-gradient(black, #9660ff);*/
+    background-image: url('../Imagenes/fondowonderland.jpg');
+	background-repeat: repeat;
+	   /* background-size:     cover;     */
+ background-position: center center;
+	   
+    /*background-image: url(../Imagenes/FondoInicio.png);*/
+}
